@@ -1,0 +1,28 @@
+<?php
+class Kucing{
+
+	public $nama = "Momo";
+	public $jenis;
+	public $gender;
+
+
+function __construct(){
+    echo "<h3>Hallo gaes</h3><br>";
+}
+
+function __destruct(){
+    echo "<br><h3>Dahlah</h3>";
+}
+
+function nama_kucing(){
+	return "Nama kucingnya adalah ".$this->nama; 
+}
+
+
+
+}
+$Kucing = new kucing();
+
+echo $Kucing->nama_kucing();
+
+?>
