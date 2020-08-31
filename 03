@@ -1,0 +1,30 @@
+<?php 
+class produk{
+	public $namabarang, 
+		   $merk,
+		   $harga;
+
+		   public function getcetak(){
+		   		return "$this->namabarang, $this->merk, $this->harga";
+		   }
+		   public function __construct ($namabarang="namabarang", $merk="merk", $harga="harga"){
+		   		$this ->namabarang = $namabarang;
+		   		$this ->merk = $merk;
+		   		$this ->harga = $harga;
+		   }
+}
+
+$produk1 = new produk("Nissan GTR R-35", "Toyota Supra MK-4",20000000);
+$produk2 = new produk("Brembo", "Sparco",120000);
+$produk3 = new produk("BBS", "Enkei ", 30000000);
+$produk4 = new Produk("Rocket Bunny", "Hoonigan", 400000);
+
+echo "Nama Mobil JDM: " . $produk1->getcetak();
+echo "<br>";
+echo "Nama Rem: " . $produk2->getcetak();
+echo "<br>";
+echo "Nama Velk: " . $produk3->getcetak();
+echo "<br>";
+echo "Nama Mesin: " . $produk4->getcetak();
+echo "<br>";
+ ?>
