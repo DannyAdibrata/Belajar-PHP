@@ -1,0 +1,7 @@
+<?php
+class Hai{
+	var $str;
+}
+$pesan = new Hai();
+$pesan->str="Hai!";
+echo $pesan->str;
